@@ -15,8 +15,8 @@ public class SingInPage {
     }
 
     public void successAuth() {
-        driver.findElement(By.id("login_field")).sendKeys("Esmeregon");
-        driver.findElement(By.id("password")).sendKeys("wiesmann1esm");
+        driver.findElement(By.id("login_field")).sendKeys("login");
+        driver.findElement(By.id("password")).sendKeys("password");
     }
 
     public void click() {
@@ -28,7 +28,7 @@ public class SingInPage {
     }
 
     public void failPassword() {
-        driver.findElement(By.id("login_field")).sendKeys("Esmeregon");
+        driver.findElement(By.id("login_field")).sendKeys("login");
         driver.findElement(By.id("password")).sendKeys("testtest");
     }
 
@@ -39,7 +39,7 @@ public class SingInPage {
 
     public void failUsername() {
         driver.findElement(By.id("login_field")).sendKeys("TestTest");
-        driver.findElement(By.id("password")).sendKeys("wiesmann1esm");
+        driver.findElement(By.id("password")).sendKeys("password");
     }
 
     public void failAuthData() {
